@@ -1,0 +1,36 @@
+INFORMATION SECURITY MANAGEMENT SYSTEM (ISMS) POLICY
+
+1. Purpose
+The purpose of this policy is to establish guidelines for protecting the
+confidentiality, integrity, and availability of organizational information assets.
+
+2. Scope
+This policy applies to all employees, contractors, and third parties who access
+organizational information systems.
+
+3. Asset Management
+All IT assets used by the organization shall be recorded and maintained.
+Asset information will be reviewed periodically.
+
+4. Access Control
+Access to systems is granted based on business requirements.
+User access is approved by the reporting manager.
+Access rights are assigned according to job roles.
+
+5. Data Protection
+Sensitive data shall be protected against unauthorized access.
+Encryption mechanisms may be used where appropriate.
+
+6. Patch Management
+Systems shall be updated regularly to address security vulnerabilities.
+Critical patches should be applied as soon as possible.
+
+7. Monitoring
+Security events may be logged and reviewed for suspicious activities.
+
+8. Incident Management
+Security incidents should be reported to the IT team.
+Appropriate actions will be taken to mitigate the impact of incidents.
+
+9. Policy Review
+This policy shall be reviewed periodically and updated as necessary.

@@ -1,0 +1,19 @@
+PATCH MANAGEMENT POLICY
+
+1. Purpose
+This policy defines the organization’s approach to managing system patches.
+
+2. Scope
+Applies to all operating systems, applications, and network devices.
+
+3. Patch Identification
+Patches may be identified through vendor notifications or internal reviews.
+
+4. Patch Deployment
+Patches should be applied when feasible to maintain system security.
+
+5. Exceptions
+Patch exceptions may be allowed based on operational requirements.
+
+6. Review
+This policy may be reviewed periodically.

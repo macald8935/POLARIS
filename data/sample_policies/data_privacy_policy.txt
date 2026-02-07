@@ -1,0 +1,32 @@
+DATA PRIVACY AND SECURITY POLICY
+
+1. Purpose
+This policy defines the organization’s approach to protecting personal and
+sensitive data.
+
+2. Scope
+This policy applies to all personal data processed by the organization,
+including employee and customer data.
+
+3. Data Collection
+Personal data shall be collected only for legitimate business purposes.
+Only necessary data should be collected.
+
+4. Data Usage
+Collected data shall be used in accordance with business requirements.
+Unauthorized use of data is prohibited.
+
+5. Data Storage
+Personal data shall be stored securely to prevent unauthorized access.
+
+6. Data Sharing
+Data may be shared with third parties when required for business operations.
+
+7. Data Retention
+Personal data should not be retained longer than necessary.
+
+8. Incident Handling
+Data breaches should be reported to management for further action.
+
+9. Policy Review
+This policy may be reviewed and updated periodically.
