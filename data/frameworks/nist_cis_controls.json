@@ -1,166 +1,171 @@
 {
-  "ID.AM-1": {
-    "function": "Identify",
-    "title": "Asset Management",
-    "objective": "Physical devices and systems are inventoried",
-    "required_clauses": [
-      "asset inventory",
-      "hardware inventory",
-      "software inventory",
-      "asset ownership",
-      "inventory update frequency"
-    ],
-    "risk_if_missing": "Unknown assets increase attack surface and unmanaged vulnerabilities"
-  },
-
-  "ID.GV-1": {
-    "function": "Identify",
-    "title": "Governance",
-    "objective": "Organizational cybersecurity policy is established",
-    "required_clauses": [
-      "policy approval authority",
-      "policy review frequency",
-      "roles and responsibilities",
-      "compliance requirement",
-      "exception handling"
-    ],
-    "risk_if_missing": "Lack of governance leads to inconsistent and unenforced security controls"
-  },
-
-  "ID.RA-1": {
-    "function": "Identify",
-    "title": "Risk Assessment",
-    "objective": "Cybersecurity risks are identified and documented",
-    "required_clauses": [
-      "risk identification",
-      "risk analysis",
-      "risk impact assessment",
-      "risk likelihood",
-      "risk register"
-    ],
-    "risk_if_missing": "Unidentified risks may lead to unplanned security incidents"
-  },
-
-  "PR.AC-1": {
-    "function": "Protect",
-    "title": "Identity and Access Management",
-    "objective": "Identities and credentials are managed",
-    "required_clauses": [
-      "user onboarding",
-      "access approval",
-      "least privilege",
-      "privileged access management",
-      "access revocation",
-      "access review frequency"
-    ],
-    "risk_if_missing": "Unauthorized access and insider threats due to weak identity controls"
-  },
-
-  "PR.DS-1": {
-    "function": "Protect",
-    "title": "Data Security",
-    "objective": "Data-at-rest and data-in-transit are protected",
-    "required_clauses": [
-      "data classification",
-      "data encryption",
-      "data access control",
-      "data retention",
-      "data disposal"
-    ],
-    "risk_if_missing": "Sensitive data exposure and regulatory non-compliance"
-  },
-
-  "PR.IP-3": {
-    "function": "Protect",
-    "title": "Configuration and Patch Management",
-    "objective": "Configuration change control processes are in place",
-    "required_clauses": [
-      "patch management",
-      "vulnerability remediation",
-      "change approval",
-      "rollback procedures",
-      "patch timelines"
-    ],
-    "risk_if_missing": "Exploitation of known vulnerabilities due to delayed patching"
-  },
-
-  "DE.CM-1": {
-    "function": "Detect",
-    "title": "Continuous Monitoring",
-    "objective": "Network and systems are continuously monitored",
-    "required_clauses": [
-      "security monitoring",
-      "log collection",
-      "alerting",
-      "incident detection",
-      "monitoring tools"
-    ],
-    "risk_if_missing": "Delayed detection of cyber attacks and breaches"
-  },
-
-  "DE.AE-1": {
-    "function": "Detect",
-    "title": "Anomaly Detection",
-    "objective": "Anomalous activity is detected and analyzed",
-    "required_clauses": [
-      "baseline behavior",
-      "anomaly detection",
-      "alert investigation",
-      "false positive handling"
-    ],
-    "risk_if_missing": "Advanced threats may remain undetected"
-  },
-
-  "RS.RP-1": {
-    "function": "Respond",
-    "title": "Incident Response Planning",
-    "objective": "Response processes are executed during incidents",
-    "required_clauses": [
-      "incident response plan",
-      "incident classification",
-      "communication procedure",
-      "escalation matrix",
-      "forensic analysis"
-    ],
-    "risk_if_missing": "Poor response increases damage and recovery time"
-  },
-
-  "RS.CO-2": {
-    "function": "Respond",
-    "title": "Incident Communication",
-    "objective": "Incidents are communicated appropriately",
-    "required_clauses": [
-      "internal notification",
-      "external notification",
-      "regulatory reporting",
-      "stakeholder communication"
-    ],
-    "risk_if_missing": "Legal penalties and reputational damage"
-  },
-
-  "RC.RP-1": {
-    "function": "Recover",
-    "title": "Recovery Planning",
-    "objective": "Recovery processes are executed after incidents",
-    "required_clauses": [
-      "business continuity plan",
-      "disaster recovery plan",
-      "backup strategy",
-      "restoration testing"
-    ],
-    "risk_if_missing": "Extended downtime and permanent data loss"
-  },
-
-  "RC.IM-1": {
-    "function": "Recover",
-    "title": "Improvements",
-    "objective": "Lessons learned are incorporated into future improvements",
-    "required_clauses": [
-      "post incident review",
-      "lessons learned",
-      "policy updates",
-      "control improvement"
-    ],
-    "risk_if_missing": "Same incidents recur due to lack of learning"
-  }
+  "framework": "NIST_CSF",
+  "version": "2.0",
+  "controls": [
+    {
+      "id": "GV.OC-01",
+      "function": "GOVERN",
+      "name": "Organizational Context",
+      "description": "Organizational mission, stakeholders, and dependencies are understood.",
+      "required_clauses": [
+        "organizational context",
+        "mission objectives",
+        "critical stakeholders",
+        "external dependencies",
+        "cybersecurity requirements"
+      ],
+      "risk_if_missing": "Security governance may not align with business priorities."
+    },
+    {
+      "id": "ID.AM-01",
+      "function": "IDENTIFY",
+      "name": "Asset Inventory",
+      "description": "Assets that enable business objectives are inventoried and managed.",
+      "required_clauses": [
+        "asset inventory",
+        "hardware inventory",
+        "software inventory",
+        "asset ownership",
+        "inventory update frequency"
+      ],
+      "risk_if_missing": "Unknown assets increase attack surface and unmanaged vulnerabilities."
+    },
+    {
+      "id": "ID.RA-01",
+      "function": "IDENTIFY",
+      "name": "Risk Assessment",
+      "description": "Cybersecurity risks are identified, analyzed, and documented.",
+      "required_clauses": [
+        "risk identification",
+        "risk analysis",
+        "risk impact assessment",
+        "risk likelihood",
+        "risk register"
+      ],
+      "risk_if_missing": "Unidentified risks may lead to unplanned security incidents."
+    },
+    {
+      "id": "PR.AA-01",
+      "function": "PROTECT",
+      "name": "Identity and Access Management",
+      "description": "Identities and credentials are managed for authorized users.",
+      "required_clauses": [
+        "user onboarding",
+        "access approval",
+        "least privilege",
+        "privileged access management",
+        "access revocation",
+        "access review frequency"
+      ],
+      "risk_if_missing": "Unauthorized access and insider threats may increase."
+    },
+    {
+      "id": "PR.DS-01",
+      "function": "PROTECT",
+      "name": "Data Security",
+      "description": "Data-at-rest and data-in-transit are protected.",
+      "required_clauses": [
+        "data classification",
+        "data encryption",
+        "data access control",
+        "data retention",
+        "data disposal"
+      ],
+      "risk_if_missing": "Sensitive data exposure and regulatory non-compliance may occur."
+    },
+    {
+      "id": "PR.PS-01",
+      "function": "PROTECT",
+      "name": "Platform Security",
+      "description": "Configurations and patches are managed across technology platforms.",
+      "required_clauses": [
+        "patch management",
+        "vulnerability remediation",
+        "change approval",
+        "rollback procedures",
+        "patch timelines"
+      ],
+      "risk_if_missing": "Known vulnerabilities may remain exploitable."
+    },
+    {
+      "id": "DE.CM-01",
+      "function": "DETECT",
+      "name": "Continuous Monitoring",
+      "description": "Systems and networks are monitored to identify cybersecurity events.",
+      "required_clauses": [
+        "security monitoring",
+        "log collection",
+        "alerting",
+        "incident detection",
+        "monitoring tools"
+      ],
+      "risk_if_missing": "Cyber attacks and breaches may be detected late."
+    },
+    {
+      "id": "DE.AE-02",
+      "function": "DETECT",
+      "name": "Adverse Event Analysis",
+      "description": "Potentially adverse events are analyzed to understand activity.",
+      "required_clauses": [
+        "baseline behavior",
+        "anomaly detection",
+        "alert investigation",
+        "false positive handling"
+      ],
+      "risk_if_missing": "Advanced threats may remain undetected."
+    },
+    {
+      "id": "RS.MA-01",
+      "function": "RESPOND",
+      "name": "Incident Management",
+      "description": "Response processes are executed during cybersecurity incidents.",
+      "required_clauses": [
+        "incident response plan",
+        "incident classification",
+        "communication procedure",
+        "escalation matrix",
+        "forensic analysis"
+      ],
+      "risk_if_missing": "Poor response may increase impact and recovery time."
+    },
+    {
+      "id": "RS.CO-02",
+      "function": "RESPOND",
+      "name": "Incident Communication",
+      "description": "Incident information is communicated to required parties.",
+      "required_clauses": [
+        "internal notification",
+        "external notification",
+        "regulatory reporting",
+        "stakeholder communication"
+      ],
+      "risk_if_missing": "Legal, regulatory, and reputational harm may increase."
+    },
+    {
+      "id": "RC.RP-01",
+      "function": "RECOVER",
+      "name": "Recovery Planning",
+      "description": "Recovery plans are executed and maintained.",
+      "required_clauses": [
+        "business continuity plan",
+        "disaster recovery plan",
+        "backup strategy",
+        "restoration testing"
+      ],
+      "risk_if_missing": "Extended downtime and permanent data loss may occur."
+    },
+    {
+      "id": "RC.IM-01",
+      "function": "RECOVER",
+      "name": "Recovery Improvements",
+      "description": "Lessons learned are incorporated into future improvements.",
+      "required_clauses": [
+        "post incident review",
+        "lessons learned",
+        "policy updates",
+        "control improvement"
+      ],
+      "risk_if_missing": "Repeated incidents may occur due to lack of learning."
+    }
+  ]
 }
