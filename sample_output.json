@@ -1,0 +1,668 @@
+{
+  "tool": "POLARIS",
+  "generated_at": "2026-05-25T01:03:43",
+  "policy_name": "ISMS Sample Policy",
+  "framework": "NIST_CSF",
+  "maturity": {
+    "obtained_score": 7,
+    "max_score": 36,
+    "percent": 19.44,
+    "level": "Initial"
+  },
+  "stats": {
+    "controls": 12,
+    "fully_covered": 0,
+    "partially_covered": 6,
+    "missing": 6,
+    "missing_clauses": 41
+  },
+  "findings": [
+    {
+      "control": "GV.OC-01",
+      "title": "Organizational Context",
+      "function": "GOVERN",
+      "description": "Organizational mission, stakeholders, and dependencies are understood.",
+      "missing": [
+        "organizational context",
+        "mission objectives",
+        "critical stakeholders",
+        "cybersecurity requirements"
+      ],
+      "covered": [
+        "external dependencies"
+      ],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "organizational context",
+          "best_sentence": "incident management security incidents should be reported to the it team.",
+          "similarity": 0.2132,
+          "status": "missing"
+        },
+        {
+          "clause": "mission objectives",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "critical stakeholders",
+          "best_sentence": "critical patches should be applied as soon as possible.",
+          "similarity": 0.2132,
+          "status": "missing"
+        },
+        {
+          "clause": "external dependencies",
+          "best_sentence": "4.",
+          "similarity": 0.7071,
+          "status": "covered"
+        },
+        {
+          "clause": "cybersecurity requirements",
+          "best_sentence": "encryption mechanisms may be used where appropriate.",
+          "similarity": 0.2673,
+          "status": "missing"
+        }
+      ],
+      "score": 1,
+      "risk": "Security governance may not align with business priorities."
+    },
+    {
+      "control": "ID.AM-01",
+      "title": "Asset Inventory",
+      "function": "IDENTIFY",
+      "description": "Assets that enable business objectives are inventoried and managed.",
+      "missing": [
+        "asset inventory",
+        "hardware inventory",
+        "software inventory",
+        "asset ownership",
+        "inventory update frequency"
+      ],
+      "covered": [],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "asset inventory",
+          "best_sentence": "asset information will be reviewed periodically.",
+          "similarity": 0.2887,
+          "status": "missing"
+        },
+        {
+          "clause": "hardware inventory",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "software inventory",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "asset ownership",
+          "best_sentence": "asset information will be reviewed periodically.",
+          "similarity": 0.2887,
+          "status": "missing"
+        },
+        {
+          "clause": "inventory update frequency",
+          "best_sentence": "encryption mechanisms may be used where appropriate.",
+          "similarity": 0.2182,
+          "status": "missing"
+        }
+      ],
+      "score": 0,
+      "risk": "Unknown assets increase attack surface and unmanaged vulnerabilities."
+    },
+    {
+      "control": "ID.RA-01",
+      "title": "Risk Assessment",
+      "function": "IDENTIFY",
+      "description": "Cybersecurity risks are identified, analyzed, and documented.",
+      "missing": [
+        "risk identification",
+        "risk analysis",
+        "risk impact assessment",
+        "risk register"
+      ],
+      "covered": [
+        "risk likelihood"
+      ],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "risk identification",
+          "best_sentence": "access rights are assigned according to job roles.",
+          "similarity": 0.25,
+          "status": "missing"
+        },
+        {
+          "clause": "risk analysis",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "risk impact assessment",
+          "best_sentence": "purpose the purpose of this policy is to establish guidelines for protecting the confidentiality, integrity, and availability of organizational information assets.",
+          "similarity": 0.2144,
+          "status": "missing"
+        },
+        {
+          "clause": "risk likelihood",
+          "best_sentence": "4.",
+          "similarity": 0.7071,
+          "status": "covered"
+        },
+        {
+          "clause": "risk register",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        }
+      ],
+      "score": 1,
+      "risk": "Unidentified risks may lead to unplanned security incidents."
+    },
+    {
+      "control": "PR.AA-01",
+      "title": "Identity and Access Management",
+      "function": "PROTECT",
+      "description": "Identities and credentials are managed for authorized users.",
+      "missing": [
+        "user onboarding",
+        "least privilege"
+      ],
+      "covered": [
+        "access approval",
+        "privileged access management",
+        "access revocation",
+        "access review frequency"
+      ],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "user onboarding",
+          "best_sentence": "encryption mechanisms may be used where appropriate.",
+          "similarity": 0.2673,
+          "status": "missing"
+        },
+        {
+          "clause": "access approval",
+          "best_sentence": "9.",
+          "similarity": 0.7071,
+          "status": "covered"
+        },
+        {
+          "clause": "least privilege",
+          "best_sentence": "asset information will be reviewed periodically.",
+          "similarity": 0.2887,
+          "status": "missing"
+        },
+        {
+          "clause": "privileged access management",
+          "best_sentence": "9.",
+          "similarity": 0.5774,
+          "status": "covered"
+        },
+        {
+          "clause": "access revocation",
+          "best_sentence": "9.",
+          "similarity": 0.7071,
+          "status": "covered"
+        },
+        {
+          "clause": "access review frequency",
+          "best_sentence": "9.",
+          "similarity": 0.5774,
+          "status": "covered"
+        }
+      ],
+      "score": 2,
+      "risk": "Unauthorized access and insider threats may increase."
+    },
+    {
+      "control": "PR.DS-01",
+      "title": "Data Security",
+      "function": "PROTECT",
+      "description": "Data-at-rest and data-in-transit are protected.",
+      "missing": [],
+      "covered": [
+        "data access control"
+      ],
+      "partial": [
+        "data classification",
+        "data encryption",
+        "data retention",
+        "data disposal"
+      ],
+      "matches": [
+        {
+          "clause": "data classification",
+          "best_sentence": "data protection sensitive data shall be protected against unauthorized access.",
+          "similarity": 0.4082,
+          "status": "partial"
+        },
+        {
+          "clause": "data encryption",
+          "best_sentence": "data protection sensitive data shall be protected against unauthorized access.",
+          "similarity": 0.4082,
+          "status": "partial"
+        },
+        {
+          "clause": "data access control",
+          "best_sentence": "9.",
+          "similarity": 0.5774,
+          "status": "covered"
+        },
+        {
+          "clause": "data retention",
+          "best_sentence": "data protection sensitive data shall be protected against unauthorized access.",
+          "similarity": 0.4082,
+          "status": "partial"
+        },
+        {
+          "clause": "data disposal",
+          "best_sentence": "data protection sensitive data shall be protected against unauthorized access.",
+          "similarity": 0.4082,
+          "status": "partial"
+        }
+      ],
+      "score": 1,
+      "risk": "Sensitive data exposure and regulatory non-compliance may occur."
+    },
+    {
+      "control": "PR.PS-01",
+      "title": "Platform Security",
+      "function": "PROTECT",
+      "description": "Configurations and patches are managed across technology platforms.",
+      "missing": [
+        "vulnerability remediation",
+        "rollback procedures",
+        "patch timelines"
+      ],
+      "covered": [
+        "change approval"
+      ],
+      "partial": [
+        "patch management"
+      ],
+      "matches": [
+        {
+          "clause": "patch management",
+          "best_sentence": "patch management systems shall be updated regularly to address security vulnerabilities.",
+          "similarity": 0.3922,
+          "status": "partial"
+        },
+        {
+          "clause": "vulnerability remediation",
+          "best_sentence": "scope this policy applies to all employees, contractors, and third parties who access organizational information systems.",
+          "similarity": 0.3162,
+          "status": "missing"
+        },
+        {
+          "clause": "change approval",
+          "best_sentence": "4.",
+          "similarity": 0.7071,
+          "status": "covered"
+        },
+        {
+          "clause": "rollback procedures",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "patch timelines",
+          "best_sentence": "user access is approved by the reporting manager.",
+          "similarity": 0.25,
+          "status": "missing"
+        }
+      ],
+      "score": 1,
+      "risk": "Known vulnerabilities may remain exploitable."
+    },
+    {
+      "control": "DE.CM-01",
+      "title": "Continuous Monitoring",
+      "function": "DETECT",
+      "description": "Systems and networks are monitored to identify cybersecurity events.",
+      "missing": [
+        "log collection",
+        "alerting",
+        "incident detection",
+        "monitoring tools"
+      ],
+      "covered": [],
+      "partial": [
+        "security monitoring"
+      ],
+      "matches": [
+        {
+          "clause": "security monitoring",
+          "best_sentence": "monitoring security events may be logged and reviewed for suspicious activities.",
+          "similarity": 0.4264,
+          "status": "partial"
+        },
+        {
+          "clause": "log collection",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "alerting",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "incident detection",
+          "best_sentence": "asset information will be reviewed periodically.",
+          "similarity": 0.2887,
+          "status": "missing"
+        },
+        {
+          "clause": "monitoring tools",
+          "best_sentence": "monitoring security events may be logged and reviewed for suspicious activities.",
+          "similarity": 0.2132,
+          "status": "missing"
+        }
+      ],
+      "score": 0,
+      "risk": "Cyber attacks and breaches may be detected late."
+    },
+    {
+      "control": "DE.AE-02",
+      "title": "Adverse Event Analysis",
+      "function": "DETECT",
+      "description": "Potentially adverse events are analyzed to understand activity.",
+      "missing": [
+        "baseline behavior",
+        "alert investigation",
+        "false positive handling"
+      ],
+      "covered": [
+        "anomaly detection"
+      ],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "baseline behavior",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "anomaly detection",
+          "best_sentence": "7.",
+          "similarity": 0.7071,
+          "status": "covered"
+        },
+        {
+          "clause": "alert investigation",
+          "best_sentence": "purpose the purpose of this policy is to establish guidelines for protecting the confidentiality, integrity, and availability of organizational information assets.",
+          "similarity": 0.1313,
+          "status": "missing"
+        },
+        {
+          "clause": "false positive handling",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        }
+      ],
+      "score": 1,
+      "risk": "Advanced threats may remain undetected."
+    },
+    {
+      "control": "RS.MA-01",
+      "title": "Incident Management",
+      "function": "RESPOND",
+      "description": "Response processes are executed during cybersecurity incidents.",
+      "missing": [
+        "incident response plan",
+        "incident classification",
+        "communication procedure",
+        "escalation matrix",
+        "forensic analysis"
+      ],
+      "covered": [],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "incident response plan",
+          "best_sentence": "user access is approved by the reporting manager.",
+          "similarity": 0.2041,
+          "status": "missing"
+        },
+        {
+          "clause": "incident classification",
+          "best_sentence": "incident management security incidents should be reported to the it team.",
+          "similarity": 0.2132,
+          "status": "missing"
+        },
+        {
+          "clause": "communication procedure",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "escalation matrix",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "forensic analysis",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        }
+      ],
+      "score": 0,
+      "risk": "Poor response may increase impact and recovery time."
+    },
+    {
+      "control": "RS.CO-02",
+      "title": "Incident Communication",
+      "function": "RESPOND",
+      "description": "Incident information is communicated to required parties.",
+      "missing": [
+        "internal notification",
+        "external notification",
+        "regulatory reporting",
+        "stakeholder communication"
+      ],
+      "covered": [],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "internal notification",
+          "best_sentence": "monitoring security events may be logged and reviewed for suspicious activities.",
+          "similarity": 0.2132,
+          "status": "missing"
+        },
+        {
+          "clause": "external notification",
+          "best_sentence": "monitoring security events may be logged and reviewed for suspicious activities.",
+          "similarity": 0.2132,
+          "status": "missing"
+        },
+        {
+          "clause": "regulatory reporting",
+          "best_sentence": "user access is approved by the reporting manager.",
+          "similarity": 0.25,
+          "status": "missing"
+        },
+        {
+          "clause": "stakeholder communication",
+          "best_sentence": "access rights are assigned according to job roles.",
+          "similarity": 0.25,
+          "status": "missing"
+        }
+      ],
+      "score": 0,
+      "risk": "Legal, regulatory, and reputational harm may increase."
+    },
+    {
+      "control": "RC.RP-01",
+      "title": "Recovery Planning",
+      "function": "RECOVER",
+      "description": "Recovery plans are executed and maintained.",
+      "missing": [
+        "business continuity plan",
+        "disaster recovery plan",
+        "backup strategy",
+        "restoration testing"
+      ],
+      "covered": [],
+      "partial": [],
+      "matches": [
+        {
+          "clause": "business continuity plan",
+          "best_sentence": "access control access to systems is granted based on business requirements.",
+          "similarity": 0.3203,
+          "status": "missing"
+        },
+        {
+          "clause": "disaster recovery plan",
+          "best_sentence": "user access is approved by the reporting manager.",
+          "similarity": 0.2041,
+          "status": "missing"
+        },
+        {
+          "clause": "backup strategy",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "restoration testing",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        }
+      ],
+      "score": 0,
+      "risk": "Extended downtime and permanent data loss may occur."
+    },
+    {
+      "control": "RC.IM-01",
+      "title": "Recovery Improvements",
+      "function": "RECOVER",
+      "description": "Lessons learned are incorporated into future improvements.",
+      "missing": [
+        "post incident review",
+        "lessons learned",
+        "control improvement"
+      ],
+      "covered": [],
+      "partial": [
+        "policy updates"
+      ],
+      "matches": [
+        {
+          "clause": "post incident review",
+          "best_sentence": "incident management security incidents should be reported to the it team.",
+          "similarity": 0.1741,
+          "status": "missing"
+        },
+        {
+          "clause": "lessons learned",
+          "best_sentence": "information security management system (isms) policy 1.",
+          "similarity": 0.0,
+          "status": "missing"
+        },
+        {
+          "clause": "policy updates",
+          "best_sentence": "policy review this policy shall be reviewed periodically and updated as necessary.",
+          "similarity": 0.378,
+          "status": "partial"
+        },
+        {
+          "clause": "control improvement",
+          "best_sentence": "access control access to systems is granted based on business requirements.",
+          "similarity": 0.1961,
+          "status": "missing"
+        }
+      ],
+      "score": 0,
+      "risk": "Repeated incidents may occur due to lack of learning."
+    }
+  ],
+  "roadmap": {
+    "Short Term (0-3 months)": [
+      "ID.AM-01 - Asset Inventory: address 5 missing clause(s)",
+      "DE.CM-01 - Continuous Monitoring: address 4 missing clause(s)",
+      "RS.MA-01 - Incident Management: address 5 missing clause(s)",
+      "RS.CO-02 - Incident Communication: address 4 missing clause(s)",
+      "RC.RP-01 - Recovery Planning: address 4 missing clause(s)",
+      "RC.IM-01 - Recovery Improvements: address 3 missing clause(s)"
+    ],
+    "Mid Term (3-6 months)": [
+      "GV.OC-01 - Organizational Context: address 4 missing clause(s)",
+      "ID.RA-01 - Risk Assessment: address 4 missing clause(s)",
+      "PR.DS-01 - Data Security",
+      "PR.PS-01 - Platform Security: address 3 missing clause(s)",
+      "DE.AE-02 - Adverse Event Analysis: address 3 missing clause(s)"
+    ],
+    "Long Term (6-12 months)": [
+      "PR.AA-01 - Identity and Access Management: address 2 missing clause(s)"
+    ]
+  },
+  "scorecard": {
+    "GOVERN": {
+      "total": 1,
+      "fully_covered": 0,
+      "partially_covered": 1,
+      "missing": 0,
+      "coverage_percent": 100.0,
+      "average_score": 1.0
+    },
+    "IDENTIFY": {
+      "total": 2,
+      "fully_covered": 0,
+      "partially_covered": 1,
+      "missing": 1,
+      "coverage_percent": 50.0,
+      "average_score": 0.5
+    },
+    "PROTECT": {
+      "total": 3,
+      "fully_covered": 0,
+      "partially_covered": 3,
+      "missing": 0,
+      "coverage_percent": 100.0,
+      "average_score": 1.33
+    },
+    "DETECT": {
+      "total": 2,
+      "fully_covered": 0,
+      "partially_covered": 1,
+      "missing": 1,
+      "coverage_percent": 50.0,
+      "average_score": 0.5
+    },
+    "RESPOND": {
+      "total": 2,
+      "fully_covered": 0,
+      "partially_covered": 0,
+      "missing": 2,
+      "coverage_percent": 0.0,
+      "average_score": 0.0
+    },
+    "RECOVER": {
+      "total": 2,
+      "fully_covered": 0,
+      "partially_covered": 0,
+      "missing": 2,
+      "coverage_percent": 0.0,
+      "average_score": 0.0
+    }
+  },
+  "policy_improvements": "POLICY ENHANCEMENT (LLM-GENERATED)\n\nThe organization shall formally document, approve, implement, and periodically review the following policy requirements: alert investigation; alerting; asset inventory; asset ownership; backup strategy; baseline behavior; business continuity plan; communication procedure; control improvement; critical stakeholders; cybersecurity requirements; disaster recovery plan; escalation matrix; external notification; false positive handling; forensic analysis; hardware inventory; incident classification; incident detection; incident response plan; internal notification; inventory update frequency; least privilege; lessons learned; log collection; mission objectives; monitoring tools; organizational context; patch timelines; post incident review; regulatory reporting; restoration testing; risk analysis; risk identification; risk impact assessment; risk register; rollback procedures; software inventory; stakeholder communication; user onboarding; vulnerability remediation."
+}
