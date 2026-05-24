@@ -122,14 +122,10 @@ python main.py --policy my_policy.txt --framework path/to/custom_framework.json
 ### Terminal (default)
 Rich color-coded tables with maturity level, gap analysis, coverage matrix, and roadmap — designed for analyst workflows and quick reviews.
 
-> **📸 Screenshot placeholder** — Add a screenshot of your Rich terminal output here.  
-> Suggested path: `docs/screenshots/rich_terminal.png`
-
 ### PDF Report
 Professional multi-section PDF including: cover page, executive summary, gap analysis table, improvement roadmap, NIST function coverage matrix, and LLM-enhanced policy improvement text.
 
-> **📸 Screenshot placeholder** — Add a screenshot of the PDF report cover/summary page here.  
-> Suggested path: `docs/screenshots/pdf_report.png`
+<img width="389" height="427" alt="image" src="https://github.com/user-attachments/assets/d69dc848-b358-408b-b66c-9c903baf865e" />
 
 A sample PDF report is included in the repository: [`sample_report.pdf`](sample_report.pdf)
 
