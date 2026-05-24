@@ -1,18 +1,26 @@
-def generate_roadmap(findings):
-    roadmap = {
-        "Short Term (0–3 months)": [],
-        "Mid Term (3–6 months)": [],
-        "Long Term (6–12 months)": []
-    }
+"""Improvement roadmap generation."""
 
-    for f in findings:
-        entry = f"{f['control']} - {f['title']}"
+from __future__ import annotations
 
-        if f["score"] == 0:
-            roadmap["Short Term (0–3 months)"].append(entry)
-        elif f["score"] == 1:
-            roadmap["Mid Term (3–6 months)"].append(entry)
-        elif f["score"] == 2:
-            roadmap["Long Term (6–12 months)"].append(entry)
+
+ROADMAP_PHASES = {
+    "Short Term (0-3 months)": {0},
+    "Mid Term (3-6 months)": {1},
+    "Long Term (6-12 months)": {2},
+}
+
+
+def generate_roadmap(findings: list[dict]) -> dict[str, list[str]]:
+    roadmap = {phase: [] for phase in ROADMAP_PHASES}
+
+    for finding in findings:
+        entry = f"{finding['control']} - {finding.get('title', 'Untitled Control')}"
+        if finding.get("missing"):
+            entry = f"{entry}: address {len(finding['missing'])} missing clause(s)"
+
+        for phase, scores in ROADMAP_PHASES.items():
+            if finding.get("score") in scores:
+                roadmap[phase].append(entry)
+                break
 
     return roadmap
