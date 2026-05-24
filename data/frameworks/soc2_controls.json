@@ -1,0 +1,67 @@
+{
+  "framework": "SOC_2",
+  "version": "Trust Services Criteria 2022",
+  "controls": [
+    {
+      "id": "CC1.1",
+      "function": "COMMON_CRITERIA",
+      "name": "Control Environment",
+      "description": "The entity demonstrates commitment to integrity and ethical values.",
+      "required_clauses": [
+        "security governance",
+        "management oversight",
+        "roles and responsibilities",
+        "policy acknowledgement"
+      ]
+    },
+    {
+      "id": "CC3.2",
+      "function": "COMMON_CRITERIA",
+      "name": "Risk Identification",
+      "description": "Risks to objectives are identified and analyzed.",
+      "required_clauses": [
+        "risk identification",
+        "risk assessment",
+        "risk likelihood",
+        "risk impact"
+      ]
+    },
+    {
+      "id": "CC6.1",
+      "function": "COMMON_CRITERIA",
+      "name": "Logical Access Controls",
+      "description": "Logical access security software, infrastructure, and architectures are implemented.",
+      "required_clauses": [
+        "logical access",
+        "least privilege",
+        "access provisioning",
+        "access revocation",
+        "periodic access review"
+      ]
+    },
+    {
+      "id": "CC7.2",
+      "function": "COMMON_CRITERIA",
+      "name": "System Monitoring",
+      "description": "System components are monitored for anomalies and security events.",
+      "required_clauses": [
+        "security monitoring",
+        "log review",
+        "alert triage",
+        "incident detection"
+      ]
+    },
+    {
+      "id": "A1.2",
+      "function": "AVAILABILITY",
+      "name": "Backup and Recovery",
+      "description": "Backup, restoration, and recovery processes support availability commitments.",
+      "required_clauses": [
+        "backup strategy",
+        "restoration testing",
+        "disaster recovery",
+        "business continuity"
+      ]
+    }
+  ]
+}

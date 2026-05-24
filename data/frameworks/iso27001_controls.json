@@ -1,0 +1,66 @@
+{
+  "framework": "ISO_27001",
+  "version": "2022 Annex A",
+  "controls": [
+    {
+      "id": "A.5.1",
+      "function": "ORGANIZATIONAL",
+      "name": "Policies for Information Security",
+      "description": "Information security policies are defined, approved, communicated, and reviewed.",
+      "required_clauses": [
+        "information security policy",
+        "management approval",
+        "policy communication",
+        "policy review frequency"
+      ]
+    },
+    {
+      "id": "A.5.9",
+      "function": "ORGANIZATIONAL",
+      "name": "Inventory of Information and Other Associated Assets",
+      "description": "Information and associated assets are identified and inventoried.",
+      "required_clauses": [
+        "asset inventory",
+        "asset owner",
+        "asset classification",
+        "inventory maintenance"
+      ]
+    },
+    {
+      "id": "A.5.15",
+      "function": "ORGANIZATIONAL",
+      "name": "Access Control",
+      "description": "Rules to control physical and logical access are established.",
+      "required_clauses": [
+        "access control policy",
+        "least privilege",
+        "access approval",
+        "access review"
+      ]
+    },
+    {
+      "id": "A.5.24",
+      "function": "ORGANIZATIONAL",
+      "name": "Information Security Incident Management Planning",
+      "description": "Incident management responsibilities and procedures are planned.",
+      "required_clauses": [
+        "incident response plan",
+        "incident roles",
+        "incident classification",
+        "incident communication"
+      ]
+    },
+    {
+      "id": "A.8.8",
+      "function": "TECHNOLOGICAL",
+      "name": "Management of Technical Vulnerabilities",
+      "description": "Technical vulnerabilities are identified, evaluated, and remediated.",
+      "required_clauses": [
+        "vulnerability management",
+        "patch management",
+        "remediation timeline",
+        "risk-based prioritization"
+      ]
+    }
+  ]
+}
